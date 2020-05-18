@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <header>
+        <h2>Covic 19 Live Update</h2>
+        <div id="countries">
+          <select name="countries-list" id="countries-list" onchange="run()">
+            <option selected disabled>Select a country</option>
+          </select>
+        </div>
+        <div id="report">
+          <p id="affected-countries"></p>
+          <p id="confirmed"></p>
+          <p id="recovered"></p>
+          <p id="critical"></p>
+          <p id="deaths"></p>
+        </div>
+      </header>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
